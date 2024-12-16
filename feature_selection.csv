@@ -1,0 +1,17 @@
+,rank,features
+0,1,Age
+1,1,Breastfeeding
+2,1,Cortical_MRI
+3,1,Gender
+4,1,Infratentorial_MRI
+5,1,Initial_Symptom
+6,1,Oligoclonal_Bands
+7,1,Periventricular_MRI
+8,1,Schooling
+9,1,Varicella
+10,2,LLSSEP
+11,3,Mono_or_Polysymptomatic
+12,4,Spinal_Cord_MRI
+13,5,VEP
+14,6,ULSSEP
+15,7,BAEP
