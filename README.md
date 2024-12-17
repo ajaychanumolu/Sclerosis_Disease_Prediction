@@ -1,5 +1,5 @@
 
-# Predictors of Sclerosis Disease
+# Predictors of Sclerosis Disease.
 
 
 This project aims to analyze and identify the factors that predict the progression of Clinically Isolated Syndrome (CIS) to Multiple Sclerosis (MS). The study is based on a dataset collected from Mexican patients at the National Institute of Neurology and Neurosurgery in Mexico City between 2006 and 2010. Through this analysis, we hope to support early diagnosis and improve treatment strategies for MS patients.
