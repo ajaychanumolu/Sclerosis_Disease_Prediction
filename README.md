@@ -1,53 +1,66 @@
+# 🧠 Predictors of Sclerosis Disease
 
-# Predictors of Sclerosis Disease.
+This project focuses on identifying the **key predictors** for the progression of **Clinically Isolated Syndrome (CIS)** to **Multiple Sclerosis (MS)** using clinical and imaging data. The dataset is derived from patients at the **National Institute of Neurology and Neurosurgery**, Mexico City (2006–2010).
 
+> 🎯 Goal: Enable early MS diagnosis and support more effective treatment strategies through data-driven insights.
 
-This project aims to analyze and identify the factors that predict the progression of Clinically Isolated Syndrome (CIS) to Multiple Sclerosis (MS). The study is based on a dataset collected from Mexican patients at the National Institute of Neurology and Neurosurgery in Mexico City between 2006 and 2010. Through this analysis, we hope to support early diagnosis and improve treatment strategies for MS patients.
+---
 
-## Dataset
+## 📊 Dataset Overview
 
-```
-Dataset Attributes
+The dataset contains various demographic, clinical, and diagnostic attributes for each patient.
 
-```
+### 🧾 Attributes
 
-| Column Name  | Description |
-| :-------- | :------- | 
-| `ID` | `Patient identifier (int)` | 
-| `Age` | `Age of the patient (in years)` | 
-| `Schooling	` | `Time spent in school (in years)` | 
-| `Gender` | `1=male, 2=female` | 
-| `Breastfeeding	` | `1=yes, 2=no, 3=unknown` | 
-| `Varicella` | `1=positive, 2=negative, 3=unknown` | 
-| `Initial_Symptoms	` | `Encoded values representing the initial symptoms experienced by the patient` | 
-| `Mono_or_Polysymptomatic	` | `1=monosymptomatic, 2=polysymptomatic, 3=unknown` | 
-| `Oligoclonal_Bands	` | `0=negative, 1=positive, 2=unknown` | 
-| `LLSSEP` | `0=negative, 1=positive` | 
-| `ULSSEP` | `0=negative, 1=positive` | 
-| `VEP` | `0=negative, 1=positive` | 
-| `BAEP` | `0=negative, 1=positive` | 
-| `Periventricular_MRI` | `0=negative, 1=positive` | 
-| `Cortical_MRI` | `0=negative, 1=positive` | 
-| `Infratentorial_MRI` | `0=negative, 1=positive` | 
-| `Spinal_Cord_MRI` | `0=negative, 1=positive` | 
-| `initial_EDSS	` | `Expanded Disability Status Scale at diagnosis` | 
-| `final_EDSS	` | `Expanded Disability Status Scale at follow-up` | 
-| `Group	` | `1=CDMS (Confirmed MS), 2=non-CDMS` |
+| Column Name              | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `ID`                     | Patient identifier (int)                                                    |
+| `Age`                    | Age of the patient (in years)                                               |
+| `Schooling`              | Time spent in school (in years)                                             |
+| `Gender`                 | 1 = Male, 2 = Female                                                         |
+| `Breastfeeding`          | 1 = Yes, 2 = No, 3 = Unknown                                                 |
+| `Varicella`              | 1 = Positive, 2 = Negative, 3 = Unknown                                     |
+| `Initial_Symptoms`       | Encoded values representing symptoms at disease onset                       |
+| `Mono_or_Polysymptomatic`| 1 = Mono, 2 = Poly, 3 = Unknown                                              |
+| `Oligoclonal_Bands`      | 0 = Negative, 1 = Positive, 2 = Unknown                                     |
+| `LLSSEP`                 | Lower Limb Somatosensory Evoked Potential (0 = Negative, 1 = Positive)      |
+| `ULSSEP`                 | Upper Limb SSEP (0 = Negative, 1 = Positive)                                |
+| `VEP`                    | Visual Evoked Potential (0 = Negative, 1 = Positive)                        |
+| `BAEP`                   | Brainstem Auditory Evoked Potential (0 = Negative, 1 = Positive)            |
+| `Periventricular_MRI`    | MRI marker presence (0 = Negative, 1 = Positive)                            |
+| `Cortical_MRI`           | MRI marker presence (0 = Negative, 1 = Positive)                            |
+| `Infratentorial_MRI`     | MRI marker presence (0 = Negative, 1 = Positive)                            |
+| `Spinal_Cord_MRI`        | MRI marker presence (0 = Negative, 1 = Positive)                            |
+| `initial_EDSS`           | EDSS score at diagnosis                                                     |
+| `final_EDSS`             | EDSS score at follow-up                                                     |
+| `Group`                  | 1 = CDMS (Confirmed MS), 2 = non-CDMS                                       |
 
+---
 
+## 🧬 Key Medical Terms
 
+| Term | Description |
+|------|-------------|
+| **BAEP** | *Brainstem Auditory Evoked Potentials* — tests auditory nerve/brainstem function |
+| **VEP** | *Visual Evoked Potential* — measures the speed of visual pathway responses |
+| **SSEP (LL/UL)** | *Somatosensory Evoked Potentials* — assesses nerve responses in lower/upper limbs |
+| **Oligoclonal Bands** | Marker for inflammation in the CNS, often found in MS patients |
+| **EDSS** | *Expanded Disability Status Scale* — quantifies disability in MS on a scale of 0–10 |
 
+---
 
+## 📈 Project Goals
 
-## Definitions of Key Terms
+- Apply feature selection to find high-impact predictors of MS progression
+- Use classification models (like Random Forest, Logistic Regression, etc.)
+- Analyze model performance using metrics: **Accuracy**, **ROC AUC**, **Confusion Matrix**
+- Identify clinical features that could guide **early diagnosis and intervention**
 
-**BAEP**: Brainstem auditory evoked potentials, used to assess auditory nerve pathways.
+---
 
-**VEP**: Visual evoked potential, measures damage to visual pathways.
+## 💡 Future Scope
 
-**Oligoclonal Bands**: Immunoglobulins present in cerebrospinal fluid, a marker for MS.
-
-**SSEP**: Somatosensory evoked potentials, used to evaluate nerve responses in limbs.
-
-**EDSS**: Expanded Disability Status Scale, measures the severity of MS.
+- Integrate neuroimaging features for deeper analysis
+- Use explainable AI (e.g., SHAP, LIME) to interpret model decisions
+- Extend study to multi-center, diverse datasets
 
